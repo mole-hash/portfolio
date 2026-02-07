@@ -1,0 +1,123 @@
+:root {
+    --navy: #1A4A73;
+    --intense-blue: #2E81C9;
+    --dark-blue-hover: #1A2C4A;
+    --light-blue: #D4EBFF;
+    --soft-blue: #89B3D9;
+    --ultralight-cream: #FCFAF7;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--ultralight-cream);
+    color: var(--navy);
+}
+
+.header-main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 2.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--navy);
+    margin-bottom: 0.15em;
+    text-align: center;
+}
+
+.logo-line {
+    border: none;
+    border-bottom: 3px solid var(--intense-blue);
+    width: 100%;
+    margin: 0 auto 1.6rem auto;
+}
+
+.menu-row {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.15rem;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.menu-row a {
+    color: var(--intense-blue);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    transition: color 0.2s;
+    background: none;
+}
+
+.menu-row a.active,
+.menu-row a:focus {
+    color: var(--navy);
+}
+
+.menu-row a:hover {
+    color: var(--dark-blue-hover);
+    background: none;
+}
+
+.section {
+    background: var(--light-blue);
+    margin: 2rem auto 0 auto;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--soft-blue);
+    max-width: 800px;
+}
+
+.section.about {
+    background: none;
+    box-shadow: none;
+}
+
+/* Nowa reguła dla wyrównania tekstu */
+.section.about p {
+    text-align: justify; 
+}
+
+
+/* Style dla obrazu w sekcji about */
+.about img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto 0 auto; /* Wyśrodkowanie i odstęp */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section-line {
+    border: none;
+    border-bottom: 1.5px solid var(--soft-blue);
+    max-width: 800px;
+    margin: 2rem auto 0 auto;
+}
+
+.about h1     { color: var(--navy); }
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: transparent;
+    color: var(--navy);
+    margin-top: 2rem;
+    font-size: 1rem;
